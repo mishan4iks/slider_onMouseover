@@ -1,0 +1,114 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-image:url(img/fon.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.carusel img{
+	width: 500px;
+	height: 400px;
+	float: left;
+	display: block;
+	margin: 0px auto;
+}
+.carusel_container{
+	width: 500px;
+	height: 400px;
+	display: block;
+	margin: 0px auto;
+	overflow: hidden;
+	
+
+}
+.carusel{
+	padding-top:100px; 
+	width: 7000px;
+	height: 400px;
+	position: relative;
+	left: 0;
+}
+.btn_container{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+#btn_prev{
+	width: 100px;
+	height: 50px;
+	font-size: 14px;
+	font-family: 'Comic Neue', cursive;
+}
+#btn_prev:hover{
+	background-color:black;
+	color: #fff; 
+}
+
+#btn_next{
+	width: 100px;
+	height: 50px;
+	font-size: 14px;
+	font-family: 'Comic Neue', cursive;
+}
+#btn_next:hover{
+	background-color:black;
+	color: #fff; 
+}
+
+@media(min-width: 425px) and (max-width: 767px){
+		.carusel{
+			padding: 0px;
+			width: 7000px;
+
+		}
+		.carusel_container{
+			width: 425px;
+		}
+		.carusel img:not(:first-child){
+			padding-left:75px;
+		}
+		.carusel img{
+			width: 425px;
+		}
+		.btn_container{
+			display:block;
+			text-align: center;
+		}
+}
+@media(min-width: 375px) and (max-width: 424px){
+		.carusel{
+			padding: 0px;
+		}
+		.carusel img:not(:first-child){
+			padding-left:125px;
+		}
+		.carusel_container{
+			width: 375px;
+		}
+		.carusel img{
+			width: 375px;
+		}
+		.btn_container{
+			display:block;
+			text-align: center;
+		}
+}
+@media(min-width: 320px) and (max-width: 374px){
+		.carusel{
+			padding: 0px;
+		}
+		.carusel_container{
+			width: 320px;
+		}
+		.carusel img:not(:first-child){
+			padding-left:180px;
+		}
+		.carusel img{
+			width: 320px;
+		}
+		.btn_container{
+			display:block;
+			text-align: center;
+		}
+}
